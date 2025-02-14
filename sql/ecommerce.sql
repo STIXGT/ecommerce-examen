@@ -7,7 +7,7 @@ CREATE TABLE `users` (
   `rol` varchar(255) NOT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `users` VALUES ('admin','admin@dummy.com','1234','ADMIN');
+INSERT INTO `users` VALUES ('admin','stiveguano@gmail.com','1234','ADMIN');
 
 
 CREATE DATABASE webhook;
@@ -18,7 +18,7 @@ CREATE TABLE `listeners` (
   `event_type` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `listeners` VALUES (1,'http://localhost:9092','NEW_SALES');
+INSERT INTO `listeners` VALUES (1,'http://3pary-app:9092','NEW_SALES');
 
 
 CREATE DATABASE crm;
